@@ -1,0 +1,49 @@
+import React from 'react'
+import styled from 'styled-components'
+import FaExternalLink from 'react-icons/lib/fa/external-link'
+
+export const Container = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border: dashed 8px #aaa;
+  border-radius: 20px;
+  margin: 10px;
+
+  h2 {
+    margin: 10px;
+    flex-basis: 100%;
+  }
+
+  p {
+    margin: 0;
+    flex-basis: 100%;
+  }
+`
+
+export const Placeholder = ({ title, route, issues, wireframe, thumbnail }) => (
+  <Container>
+    <h2>{title}</h2>
+    <p>
+      Wireframe: &nbsp;
+      <a href={wireframe}>
+        <FaExternalLink />
+      </a>
+    </p>
+    <p>
+      Component Location: <b>{route}</b>
+    </p>
+    <div>
+      <h3>Issues</h3>
+      <ul>
+        {issues.map(issue => (
+          <a href={issue.url}>
+            <li>{issue.title}</li>
+          </a>
+        ))}
+      </ul>
+    </div>
+    <img src={thumbnail} alt="" />
+  </Container>
+)
