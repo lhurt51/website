@@ -6,8 +6,8 @@ const taskInfo = {
   route: '/src/HeaderComponents/Login.js',
   issues: [
     {
-      title: '#12 - a11y Nav',
-      url: 'https://github.com/HighFivesFoundation/website/issues/12'
+      title: '#18 - Login',
+      url: 'https://github.com/HighFivesFoundation/website/issues/18'
     }
   ],
   wireframe: 'https://app.moqups.com/eporcello/BTrdKJSG6L/view/page/ad64222d5',

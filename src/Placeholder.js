@@ -22,7 +22,14 @@ export const Container = styled.div`
   }
 `
 
-export const Placeholder = ({ title, route, issues, wireframe, thumbnail }) => (
+export const Placeholder = ({
+  title,
+  route,
+  issues,
+  wireframe,
+  thumbnail,
+  children
+}) => (
   <Container>
     <h2>{title}</h2>
     <p>
@@ -44,6 +51,7 @@ export const Placeholder = ({ title, route, issues, wireframe, thumbnail }) => (
         ))}
       </ul>
     </div>
+    {children}
     <img src={thumbnail} alt="" />
   </Container>
 )

@@ -1,8 +1,12 @@
 import React, { Component } from 'react'
 import { Header } from './HeaderComponents/Header'
 import { Homepage } from './HomeComponents/Homepage'
+import { Registration } from './RegistrationComponents/Registration'
+import { Registration1 } from './RegistrationComponents/Registration1'
+import { Registration2 } from './RegistrationComponents/Registration2'
 import { Footer } from './Footer'
 import styled from 'styled-components'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 const Container = styled.section`
   width: 100%;
@@ -26,11 +30,18 @@ const Container = styled.section`
 class App extends Component {
   render() {
     return (
-      <Container>
-        <Header />
-        <Homepage />
-        <Footer />
-      </Container>
+      <BrowserRouter>
+        <Container>
+          <Header />
+          <Switch>
+            <Route exact path="/" component={Homepage} />
+            <Route exact path="/registration" component={Registration} />
+            <Route exact path="/registration-1" component={Registration1} />
+            <Route exact path="/registration-2" component={Registration2} />
+          </Switch>
+          <Footer />
+        </Container>
+      </BrowserRouter>
     )
   }
 }

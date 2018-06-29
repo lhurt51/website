@@ -6,8 +6,8 @@ const taskInfo = {
   route: '/src/HomeComponents/MailingList.js',
   issues: [
     {
-      title: '#11 - Homepage Video',
-      url: 'https://github.com/HighFivesFoundation/website/issues/11'
+      title: '#22 - Mailing List',
+      url: 'https://github.com/HighFivesFoundation/website/issues/22'
     }
   ],
   wireframe: 'https://app.moqups.com/eporcello/BTrdKJSG6L/view/page/ad64222d5',
