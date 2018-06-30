@@ -6,8 +6,6 @@ import registerServiceWorker from './registerServiceWorker'
 import ApolloClient from 'apollo-boost'
 import { ApolloProvider } from 'react-apollo'
 
-require('dotenv').config()
-
 const uri = process.env.REACT_APP_GRAPHQL_ENDPOINT || 'http://localhost:4000'
 const client = new ApolloClient({uri})
 
