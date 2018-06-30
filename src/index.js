@@ -11,6 +11,8 @@ require('dotenv').config()
 const uri = process.env.REACT_APP_GRAPHQL_ENDPOINT || 'http://localhost:4000'
 const client = new ApolloClient({uri})
 
+console.log('graphql endpoint ', uri)
+
 ReactDOM.render(
   <ApolloProvider client={client}>
     <App />
