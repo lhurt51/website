@@ -6,7 +6,7 @@ import { Registration1 } from './RegistrationComponents/Registration1'
 import { Registration2 } from './RegistrationComponents/Registration2'
 import { Footer } from './Footer'
 import styled from 'styled-components'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 const Container = styled.section`
   width: 100%;
@@ -30,7 +30,7 @@ const Container = styled.section`
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <Router>
         <Container>
           <Header />
           <Switch>
@@ -41,7 +41,7 @@ class App extends Component {
           </Switch>
           <Footer />
         </Container>
-      </BrowserRouter>
+      </Router>
     )
   }
 }
