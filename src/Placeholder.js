@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import FaExternalLink from 'react-icons/lib/fa/external-link'
 
@@ -55,3 +56,12 @@ export const Placeholder = ({
     <img src={thumbnail} alt='' />
   </Container>
 )
+
+Placeholder.propTypes = {
+  title: PropTypes.any,
+  route: PropTypes.any,
+  issues: PropTypes.any,
+  wireframe: PropTypes.any,
+  thumbnail: PropTypes.any,
+  children: PropTypes.any
+}
