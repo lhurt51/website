@@ -22,7 +22,7 @@ const taskInfo = {
 export const HomeAthletes = () => (
   <div>
     <Placeholder {...taskInfo}>
-      <Link to="/registration">
+      <Link to='/registration'>
         <button style={{ height: 70, width: 175 }}>
           Athlete Application Registration
         </button>

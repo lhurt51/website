@@ -52,6 +52,6 @@ export const Placeholder = ({
       </ul>
     </div>
     {children}
-    <img src={thumbnail} alt="" />
+    <img src={thumbnail} alt='' />
   </Container>
 )
