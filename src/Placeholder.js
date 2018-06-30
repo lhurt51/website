@@ -44,8 +44,8 @@ export const Placeholder = ({
     <div>
       <h3>Issues</h3>
       <ul>
-        {issues.map(issue => (
-          <a href={issue.url}>
+        {issues.map((issue, i) => (
+          <a key={i} href={issue.url}>
             <li>{issue.title}</li>
           </a>
         ))}

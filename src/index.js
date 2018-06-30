@@ -8,9 +8,8 @@ import { ApolloProvider } from 'react-apollo'
 
 require('dotenv').config()
 
-const client = new ApolloClient({
-  uri: process.env.REACT_APP_GRAPHQL_ENDPOINT
-})
+const uri = process.env.REACT_APP_GRAPHQL_ENDPOINT || 'http://localhost:4000'
+const client = new ApolloClient({uri})
 
 ReactDOM.render(
   <ApolloProvider client={client}>
