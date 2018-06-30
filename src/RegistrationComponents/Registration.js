@@ -20,7 +20,7 @@ export const Registration = () => (
     <h1 style={{ color: '#568f56' }}>Registration Components</h1>
     <div>
       <button>
-        <Link to="/registration-1">Start Application</Link>
+        <Link to='/registration-1'>Start Application</Link>
       </button>
       <Placeholder {...taskInfo} />
     </div>

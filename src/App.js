@@ -28,16 +28,16 @@ const Container = styled.section`
 `
 
 class App extends Component {
-  render() {
+  render () {
     return (
       <Router>
         <Container>
           <Header />
           <Switch>
-            <Route exact path="/" component={Homepage} />
-            <Route exact path="/registration" component={Registration} />
-            <Route exact path="/registration-1" component={Registration1} />
-            <Route exact path="/registration-2" component={Registration2} />
+            <Route exact path='/' component={Homepage} />
+            <Route exact path='/registration' component={Registration} />
+            <Route exact path='/registration-1' component={Registration1} />
+            <Route exact path='/registration-2' component={Registration2} />
           </Switch>
           <Footer />
         </Container>
