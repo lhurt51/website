@@ -12,6 +12,7 @@ const client = new ApolloClient({uri})
 console.log('%cwelcome to high fives', 'color: purple; font-size: 40px')
 console.log('%cthank you so much for your help!!!', 'color: blue; font-size: 20px')
 console.log('connected to graphql endpoint ', uri)
+console.log('great');
 
 ReactDOM.render(
   <ApolloProvider client={client}>
