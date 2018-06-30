@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "@reach/router": "^1.1.1",
     "apollo-boost": "^0.1.10",
     "apollo-server": "^2.0.0-rc.6",
     "graphql": "^0.13.2",
@@ -11,7 +12,6 @@
     "react-apollo": "^2.1.8",
     "react-dom": "^16.4.1",
     "react-icons": "^2.2.7",
-    "react-router-dom": "^4.3.1",
     "react-scripts": "1.0.14",
     "styled-components": "^3.3.3"
   },

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Placeholder } from '../Placeholder'
-import { Link } from 'react-router-dom'
+import { Link } from '@reach/router'
 
 const taskInfo = {
   title: 'Homepage Athletes',
@@ -22,7 +22,7 @@ const taskInfo = {
 export const HomeAthletes = () => (
   <div>
     <Placeholder {...taskInfo}>
-      <Link to='/registration'>
+      <Link to="/registration">
         <button style={{ height: 70, width: 175 }}>
           Athlete Application Registration
         </button>
